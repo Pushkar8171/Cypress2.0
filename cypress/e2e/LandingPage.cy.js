@@ -10,6 +10,7 @@ describe('Groovio Test ', () => {
   it('Test 2 - Verify Title Negative', () => {
     cy.visit('https://infra.groovio.com.au/')
     cy.title().should('not.eq', 'GroovioPush');
+    
   })
 
  
