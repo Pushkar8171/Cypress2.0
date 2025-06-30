@@ -16,10 +16,10 @@ describe('Groovio Test', () => {
 
     cy.get("ul.dropdown-menu.show li:nth-child(1) a:nth-child(1)", { delay: 100 }).click() // Clicks "Studio Owner"
 
-    // ✅ Fill form with dynamic data
-    cy.get('#firstName').type('Roman', { delay: 100 })
-    cy.get('#lastName').type('James', { delay: 100 })
-    cy.get('#businessName').type('Roman James Studio', { delay: 100 })
+    //✅ Fill form with dynamic data
+    cy.get('#firstName').type('DJ', { delay: 100 })
+    cy.get('#lastName').type('Quest', { delay: 100 })
+    cy.get('#businessName').type('Drone James Studio', { delay: 100 })
     cy.get('.react-tel-input > .form-control').type(mobile, { delay: 100 })   // Dynamic phone
     cy.get('#email').type(email, { delay: 100 })                              // Dynamic email
     cy.get('#password').type('Test@123', { delay: 100 })
@@ -29,12 +29,16 @@ describe('Groovio Test', () => {
     cy.get('.swal2-confirm', { delay: 100 }).click()
     cy.get('#otp').type('1234', { delay: 50 })
     cy.get('.btn', { delay: 50 }).click()
-    cy.get('.close', { delay: 50 }).click()
+    cy.wait(2000)
+    cy.get('.close > img').click()
+    cy.wait(4000)
+    //cy.get('.close > img').click()
     
-
-
+   
     // ✅ Add submit if needed
-    // cy.get('button[type="submit"]').click()
+    //cy.get('button[type="submit"]').click()
   })
 
+
+  
 })
