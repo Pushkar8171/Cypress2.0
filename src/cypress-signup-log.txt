@@ -1,6 +1,6 @@
 
 ========= Cypress Signup Test Log =========
-Timestamp: 14/07/2025, 9:19:13 pm
+Timestamp: 14/07/2025, 9:51:01 pm
 
 Command:
 npx cypress run --browser chrome --headed --spec cypress/e2e/Signup.cy.js
@@ -28,10 +28,10 @@ npx cypress run --browser chrome --headed --spec cypress/e2e/Signup.cy.js
 
   Groovio Test
     Groovio Test
-      √ Test 3 - Verify Signup  + Studio Profile steps for waivers policy and cancellation Policy  (45136ms)
+      √ Test 3 - Verify Signup  + Studio Profile steps for waivers policy and cancellation Policy  (42519ms)
 
 
-  1 passing (49s)
+  1 passing (46s)
 
 
   (Results)
@@ -44,7 +44,7 @@ npx cypress run --browser chrome --headed --spec cypress/e2e/Signup.cy.js
   │ Skipped:      0                                                                                │
   │ Screenshots:  0                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     48 seconds                                                                       │
+  │ Duration:     46 seconds                                                                       │
   │ Spec Ran:     Signup.cy.js                                                                     │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
@@ -56,15 +56,15 @@ npx cypress run --browser chrome --headed --spec cypress/e2e/Signup.cy.js
 
        Spec                                              Tests  Passing  Failing  Pending  Skipped  
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ √  Signup.cy.js                             00:48        1        1        -        -        - │
+  │ √  Signup.cy.js                             00:46        1        1        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    √  All specs passed!                        00:48        1        1        -        -        -  
+    √  All specs passed!                        00:46        1        1        -        -        -  
 
 
 
 ======== STDERR ========
 
-DevTools listening on ws://127.0.0.1:39219/devtools/browser/95becf89-cefc-46c5-8359-994abeed2801
+DevTools listening on ws://127.0.0.1:40475/devtools/browser/8f1fa82f-cb72-409b-bc95-4eadb8f15289
 
 
 ======== STATUS ========

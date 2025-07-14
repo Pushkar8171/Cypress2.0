@@ -162,7 +162,7 @@
             logSection.style.display = "none";
             loading.style.display = "flex";
 
-            fetch("http://localhost:3000/run-signup-test", { method: "POST" })
+            fetch("https://cypress2-0.onrender.com/run-signup-test", { method: "POST" })
                 .then((res) => res.json())
                 .then((data) => {
                     loading.style.display = "none";
