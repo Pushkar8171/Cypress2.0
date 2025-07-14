@@ -13,7 +13,7 @@ app.use(cors())
 app.post("/run-signup-test", (req, res) => {
   console.log("🔁 Received request to run Cypress signup test...");
 
-  const command = "npx cypress run --browser chrome --headed --spec cypress/e2e/Signup.cy.js";
+  const command = "npx cypress run --browser electron --spec cypress/e2e/Signup.cy.js";
   const logFilePath = path.join(__dirname, "cypress-signup-log.txt");
 
   exec(command, { timeout: 300000 }, (err, stdout, stderr) => {
@@ -58,5 +58,5 @@ ${err ? "❌ FAILED" : "✅ SUCCESS"}
 
 
 app.listen(port, () => {
-  console.log(`🚀 Server listening at http://localhost:${port}`);
+  console.log(`🚀 Server listening at ${port}`);
 });
