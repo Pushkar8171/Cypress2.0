@@ -13,7 +13,7 @@ app.use(cors())
 app.post("/run-signup-test", (req, res) => {
   console.log("🔁 Received request to run Cypress signup test...");
 
-  const command = "npx cypress run --browser electron --spec cypress/e2e/Signup.cy.js";
+  const command = "npx cypress run --spec cypress/e2e/Signup.cy.js --quiet";
   const logFilePath = path.join(__dirname, "cypress-signup-log.txt");
 
   exec(command, { timeout: 300000 }, (err, stdout, stderr) => {
